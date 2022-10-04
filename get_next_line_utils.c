@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   get_next_line_utils_bonus.c                        :+:    :+:            */
+/*   get_next_line_utils.c                              :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: dtran <dtran@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/11/25 15:27:58 by dtran         #+#    #+#                 */
-/*   Updated: 2022/04/06 15:52:39 by dtran         ########   odam.nl         */
+/*   Updated: 2022/10/04 18:27:46 by dtran         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,15 +71,11 @@ char	*ft_strchr(const char *str, int c)
 	while (str[i] != '\0')
 	{
 		if (str[i] == (unsigned char)c)
-		{
 			return ((char *)str + i);
-		}
 		i++;
 	}
 	if (str[i] == (unsigned char)c)
-	{
 		return ((char *)str + i);
-	}
 	return (0);
 }
 
@@ -89,8 +85,6 @@ size_t	ft_strlen(const char *str)
 
 	idx = 0;
 	while (str[idx] != '\0')
-	{
 		idx++;
-	}
 	return (idx);
 }
